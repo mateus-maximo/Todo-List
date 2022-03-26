@@ -4,13 +4,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListAddButtonComponent } from './components/todo-list-add-button/todo-list-add-button.component';
+import { TodoListDeleteAllComponent } from './components/todo-list-delete-all/todo-list-delete-all.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HeaderComponent,
     TodoListComponent,
-    TodoListAddButtonComponent
+    TodoListAddButtonComponent,
+    TodoListDeleteAllComponent
   ],
   imports: [
     CommonModule
