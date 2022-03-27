@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListAddButtonComponent } from './components/todo-list-add-button/todo-list-add-button.component';
 import { TodoListDeleteAllComponent } from './components/todo-list-delete-all/todo-list-delete-all.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TodoListDeleteAllComponent } from './components/todo-list-delete-all/to
     TodoListDeleteAllComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
