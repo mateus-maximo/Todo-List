@@ -17,7 +17,7 @@ export class TodoListComponent implements OnInit {
       task: 'testando',
       checked: false
     }
-  ];  
+  ];
 
   constructor() { }
 
@@ -27,6 +27,10 @@ export class TodoListComponent implements OnInit {
   deleteAll(): void {
     const confirm = window.confirm("Você realmente deseja deletar tudo?");
     if(confirm) this.taskList = [];
+  }
+
+  deleteTask(index: number): void {
+    this.taskList.splice(index, 1);
   }
 
 }
