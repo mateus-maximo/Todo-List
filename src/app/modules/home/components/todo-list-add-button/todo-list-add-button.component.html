@@ -1,3 +1,3 @@
 <section>
-  <input class="add-button" placeholder="Digite sua nova task aqui" />
+  <input (keyup.enter)="submitItemTaskList()" [(ngModel)]="addItemTaskList"  class="add-button" placeholder="Digite sua nova task aqui" />
 </section>

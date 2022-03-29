@@ -8,29 +8,28 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit {
 
-  public taskList: Array<TaskList> = [
-    {
-      task: 'teste',
-      checked: true
-    },
-    {
-      task: 'testando',
-      checked: false
-    }
-  ];
+  public taskList: Array<TaskList> = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  deleteAll(): void {
+  public setEmitTaskList(event: string){
+    this.taskList.push({task: event, checked: false});
+  }
+
+  public deleteAll(): void {
     const confirm = window.confirm("Você realmente deseja deletar tudo?");
     if(confirm) this.taskList = [];
   }
 
-  deleteTask(index: number): void {
+  public deleteTask(index: number): void {
     this.taskList.splice(index, 1);
+  }
+
+  public adicionarTask(): void {
+    console.log('teste');
   }
 
 }

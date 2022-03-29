@@ -10,5 +10,5 @@
   </ul>
 </section>
 
-<app-todo-list-add-button class="add-button"></app-todo-list-add-button>
+<app-todo-list-add-button (emitItemTaskList)="setEmitTaskList($event)" class="add-button"></app-todo-list-add-button>
 <app-todo-list-delete-all (click)="deleteAll()"></app-todo-list-delete-all>
