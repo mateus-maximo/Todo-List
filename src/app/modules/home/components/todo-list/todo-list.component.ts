@@ -28,8 +28,10 @@ export class TodoListComponent implements OnInit {
     this.taskList.splice(index, 1);
   }
 
-  public adicionarTask(): void {
-    console.log('teste');
+  public verificaTask(event: string, index: number): void {
+    if(!event.length){
+      const confirm = window.confirm("Deseja deletar a task?");
+      if(confirm) this.deleteTask(index);
+    }
   }
-
 }
