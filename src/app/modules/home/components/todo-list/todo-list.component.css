@@ -32,6 +32,10 @@ input[type="checkbox"]{
   width: 5%;
 }
 
+.checked{
+  text-decoration: line-through;
+}
+
 button{
   width: 5%;
   background: none;
